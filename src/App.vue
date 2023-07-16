@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import styled from 'vue3-styled-components'
 
 interface Test {
-  sx?: any | undefined
+  sx?: string
   da?: boolean
 }
 const sx = {
@@ -16,6 +16,13 @@ const SberPaper = styled('div', sx)`
   background: ${(props) => (props.da ? 'yellow' : 'red')};
   ${(props: Test) => props.sx};
 `
+
+const x = () => {
+  fetch('https://petstore.swagger.io/v2/pet/25')
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+}
+x()
 </script>
 
 <template>
