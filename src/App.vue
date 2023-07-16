@@ -10,12 +10,12 @@ interface Test {
 const sx = {
   sx: {},
   da: Boolean
-} as Test
+}
 const SberPaper = styled('div', sx)`
   padding: 15px;
   background: ${(props) => (props.da ? 'yellow' : 'red')};
-  ${(props: Test) => props.sx};
-` as any
+  ${(props: string) => props.sx};
+`
 </script>
 
 <template>
