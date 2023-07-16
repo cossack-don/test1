@@ -8,7 +8,7 @@ interface Test {
   da?: boolean
 }
 const sx = {
-  sx: {},
+  sx: String,
   da: Boolean
 }
 //s
