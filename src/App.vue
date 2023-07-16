@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import styled from 'vue3-styled-components'
 
 interface Test {
-  sx?: Object | undefined
+  sx?: any | undefined
   da?: boolean
 }
 const sx = {
