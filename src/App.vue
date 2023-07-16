@@ -14,7 +14,7 @@ const sx = {
 const SberPaper = styled('div', sx)`
   padding: 15px;
   background: ${(props) => (props.da ? 'yellow' : 'red')};
-  ${(props) => props.sx};
+  ${(props: string | { toString: () => string }) => props.sx};
 `
 </script>
 
@@ -32,6 +32,6 @@ const SberPaper = styled('div', sx)`
     </div>
   </header>
 
-  <SberPaper :sx="{ color: 'black' }" da>Test</SberPaper>
+  <SberPaper :sx="{ color: 'blue' }" da>Test</SberPaper>
   <RouterView />
 </template>
