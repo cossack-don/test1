@@ -10,7 +10,7 @@ const sx = {
 const SberPaper = styled('div', sx)`
   padding: 15px;
   background: ${(props) => (props.da ? 'yellow' : 'red')};
-  ${(props: any) => props.sx};
+  ${(props: object) => props.sx};
 ` as any
 </script>
 
