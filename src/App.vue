@@ -11,6 +11,7 @@ const sx = {
   sx: {},
   da: Boolean
 }
+//s
 const SberPaper = styled('div', sx)`
   padding: 15px;
   background: ${(props) => (props.da ? 'yellow' : 'red')};
