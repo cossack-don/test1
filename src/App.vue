@@ -7,11 +7,11 @@ const sx = {
   sx: {},
   da: Boolean
 }
-const SberPaper = styled('div', sx)`
-  padding: 15px;
-  background: ${(props) => (props.da ? 'yellow' : 'red')};
-  ${(props) => props.sx};
-` as any
+// const SberPaper = styled('div', sx)`
+//   padding: 15px;
+//   background: ${(props) => (props.da ? 'yellow' : 'red')};
+//   ${(props) => props.sx};
+// ` as any
 </script>
 
 <template>
@@ -28,6 +28,6 @@ const SberPaper = styled('div', sx)`
     </div>
   </header>
 
-  <SberPaper :sx="{ color: 'black' }" da>Test</SberPaper>
+  <!--  <SberPaper :sx="{ color: 'black' }" da>Test</SberPaper>-->
   <RouterView />
 </template>
