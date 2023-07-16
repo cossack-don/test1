@@ -3,14 +3,18 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import styled from 'vue3-styled-components'
 
+interface Test {
+  sx?: Object
+  da?: boolean
+}
 const sx = {
   sx: {},
   da: Boolean
-}
+} as Test
 const SberPaper = styled('div', sx)`
   padding: 15px;
   background: ${(props) => (props.da ? 'yellow' : 'red')};
-  ${(props: object) => props.sx};
+  ${(props: Test) => props.sx};
 ` as any
 </script>
 
